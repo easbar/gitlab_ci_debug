@@ -1,3 +1,7 @@
 #!/bin/bash
 
-while sleep 15; do echo hello >> my_file; git add --all; git commit -am "auto"; git push; done
+run() {
+   for i in {1..3}; do echo hello >> my_file; git add --all; git commit -am "auto"; 
+}
+
+while sleep 15; do run; git push; done
