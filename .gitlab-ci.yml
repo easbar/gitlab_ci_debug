@@ -1,0 +1,5 @@
+run_pipeline:
+    stage: test
+    script:
+        - echo hello_world
+
